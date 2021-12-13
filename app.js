@@ -32,8 +32,6 @@ async function getTopTokenHolders() {
       balanceData.balance = Math.round(balanceData.balance);
       balanceData.balance = balanceData.balance / 10;
       balanceData.balance = `${balanceData.balance}M`;
-    } else {
-      balanceData.balance = balanceData.balance.toLocaleString();
     }
   }
 
