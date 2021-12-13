@@ -41,7 +41,7 @@ async function getTopTokenHolders() {
 }
 getTopTokenHolders();
 
-app.get("/", (req, res) => {
+app.get("/holders", (req, res) => {
   res.json(latestData);
 });
 
