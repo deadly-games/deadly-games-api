@@ -15,7 +15,7 @@ const PORT = 3000;
 let latestData = [];
 async function getTopTokenHolders() {
   let data = await fetch(
-    `${API_ADDRESS}/getTopTokenHolders/${CONTRACT_ADDRESS}?apiKey=${API_KEY}`
+    `${API_ADDRESS}/getTopTokenHolders/${CONTRACT_ADDRESS}?apiKey=${API_KEY}&limit=100`
   );
   // check if request successfull
   if (data.status !== 200) {
