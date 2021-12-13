@@ -43,6 +43,10 @@ app.get("/holders", (req, res) => {
   res.json(latestData);
 });
 
+app.get("/cursePrice", (req, res) => {
+  res.json(10);
+});
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
