@@ -9,7 +9,7 @@ require("dotenv").config();
 const API_KEY = process.env.API_KEY;
 const API_ADDRESS = "https://api.ethplorer.io";
 const CONTRACT_ADDRESS = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
-const REFRESH_INTERVAL = 10_000;
+const REFRESH_INTERVAL = 10000;
 const PORT = 3000;
 
 let latestData = [];
