@@ -2,6 +2,8 @@
 
 const express = require("express");
 const app = express();
+const cors = require("cors");
+app.use(cors());
 const fetch = require("node-fetch");
 require("dotenv").config();
 const API_KEY = process.env.API_KEY;
